@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+*.pkl
+*.joblib
+*.pt
+models/
+
+# Scraped Stack Overflow dump - unused, 65MB, and contains third-party API keys
+06-Agents-LangChain-LangGraph/data/train.csv
+06-Agents-LangChain-LangGraph/data/valid.csv

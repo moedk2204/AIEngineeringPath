@@ -1,0 +1,39 @@
+# ---------------------------------------------------------------------------
+# Modules 01-03: the base stack. Install this first.
+# ---------------------------------------------------------------------------
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+scikit-learn>=1.3
+scipy>=1.10
+seaborn>=0.12
+joblib>=1.3
+
+jupyterlab>=4.0
+ipykernel>=6.25
+
+nltk>=3.8              # module 03, notebook 04 (text clustering)
+
+# ---------------------------------------------------------------------------
+# Install the rest only when you reach that module - each is large.
+# ---------------------------------------------------------------------------
+
+# Module 04 - Deep Learning
+#   pip install torch torchvision      # notebooks 06, 07, 08
+#   pip install tensorflow             # notebooks 02, 03, 04, 05, 09
+#   (notebooks 00 and 01 need neither)
+
+# Module 05 - LLMs
+#   pip install transformers torch
+#   pip install langchain-community faiss-cpu pypdf    # RAG notebook
+#   pip install gradio                                  # applications/
+
+# Module 06 - Agents           (verified against langchain 1.2.0 / langgraph 1.0.5)
+#   pip install langchain langgraph python-dotenv
+#   pip install langchain-openai        # or -anthropic / -google-genai / -ollama
+
+# Module 07 - Production
+#   see 07-Production-Project-Structure/example-project/requirements.txt
+
+# Optional - module 02, notebook 07 stretch exercise
+#   pip install xgboost lightgbm
