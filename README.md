@@ -149,23 +149,100 @@ Modules 05 and 06 keep their own data alongside their notebooks.
 
 ---
 
-## Notes for whoever is teaching this
+## Video resources
 
-- **The exercises are the course.** The notebooks are scaffolding around them.
-- **Make students do 02/04.** Leakage is the mistake that makes a portfolio project
-  worthless, and it is invisible until someone shows them the noise demo.
-- **02/05 section 3** — moving a decision threshold on purpose — is the highest-value ten
-  minutes in the whole path.
-- **04/01 cannot be skipped.** Every student who skips writing backprop has to come back
-  to it later.
-- **04/00 and 04/08 teach honesty.** Both show results that do *not* flatter deep
-  learning. That is deliberate: the numbers are real, and students should see that
-  measuring beats assuming.
-- **In 03, insist the clusters get named.** A student who cannot name a cluster has
-  produced a plot, not a segmentation.
-- **06 runs without keys**, so a whole class can do it with no budget and no signups.
-- Most new notebooks are generated from `scripts/build_*.py`. Edit the script and re-run it
-  to change content across a module; editing a `.ipynb` directly is fine for one-offs.
+Every link below was checked and resolves. Use them as lookups for when a concept does not
+land — not as a syllabus. The trap for beginners is watching more video instead of writing
+code.
+
+### Start here — pick ONE full course
+
+| Course | Length | Why this one |
+|---|---|---|
+| [Machine Learning for Everybody](https://www.youtube.com/watch?v=i_LwzRVP7bg) — freeCodeCamp | ~4h | Best single starting point. Concepts + code, no maths prerequisites |
+| [ML with Python and Scikit-Learn — Full Course](https://www.youtube.com/watch?v=hDKCxebp88A) — freeCodeCamp | ~18h | Closest match to modules 01–02: linear/logistic → trees → forests → boosting |
+| [Scikit-learn Crash Course](https://www.youtube.com/watch?v=0B5eIE_1vpU) — freeCodeCamp | ~2h | If you just need the library, fast |
+| [ML Tutorial Python playlist](https://www.youtube.com/playlist?list=PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn9rw) — codebasics | short episodes | For anyone who bounces off long videos |
+
+### Module 02 — supervised learning
+
+The [StatQuest Machine Learning playlist](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF)
+is the best free explanation of these concepts anywhere. Watch each video **before** the
+notebook it lines up with:
+
+| Notebook | Watch first |
+|---|---|
+| `02/01` end-to-end | [Logistic Regression](https://www.youtube.com/watch?v=yIYKR4sgzI8) |
+| `02/02` scaling | [Support Vector Machines Pt 1](https://www.youtube.com/watch?v=efR1C6CvhmE) — shows why distance matters |
+| `02/03` overfitting | [Bias and Variance](https://www.youtube.com/watch?v=EuBBz3bI-aA) — **the most useful 7 minutes here** |
+| `02/04` cross-validation | [Cross Validation](https://www.youtube.com/watch?v=fSytzGwwBVw) |
+| `02/05` metrics | [The Confusion Matrix](https://www.youtube.com/watch?v=Kdsp6soqA7o), then [ROC and AUC](https://www.youtube.com/watch?v=4jRBRDbJemM) |
+| `02/06` regularization | [Ridge (L2) Regression](https://www.youtube.com/watch?v=Q81RR3yKn30) |
+| `02/07` trees | [Decision Trees](https://www.youtube.com/watch?v=_L39rN6gz7Y) → [Part 2](https://www.youtube.com/watch?v=wpNl-JwwplA) → [Random Forests](https://www.youtube.com/watch?v=J4Wdy0Wc_xQ) → [Gradient Boost](https://www.youtube.com/watch?v=3CC4N4z3GJc) |
+| `02/08` tuning | [GridSearchCV](https://www.youtube.com/watch?v=HdlDYng8g9s) — codebasics |
+
+Also useful: [Naive Bayes](https://www.youtube.com/watch?v=O2L2Uv9pdDA) and
+[How to evaluate a classifier in scikit-learn](https://www.youtube.com/watch?v=85dtiMz9tSo) (Data School).
+
+### Module 03 — unsupervised learning
+
+| Notebook | Watch first |
+|---|---|
+| `03/00` the mental shift | [K-means clustering](https://www.youtube.com/watch?v=4b5d3muPQmA), then [PCA in 5 minutes](https://www.youtube.com/watch?v=HMOI_lkzW08) |
+| `03/01` k-means from scratch | [K-means clustering](https://www.youtube.com/watch?v=4b5d3muPQmA) — watch it twice; you are about to implement this |
+| `03/02` PCA, DBSCAN, hierarchical | [PCA Step-by-Step](https://www.youtube.com/watch?v=FgakZw6K1QQ) → [DBSCAN](https://www.youtube.com/watch?v=RDZUdRSDOok) → [Hierarchical Clustering](https://www.youtube.com/watch?v=7xHsRkOdVwo) |
+| `03/03` recommendation | [How does Netflix recommend movies?](https://www.youtube.com/watch?v=ZspR5PZemcs) — Luis Serrano, or [The Math Behind Recommender Systems](https://www.youtube.com/watch?v=n3RKsY2H-NE) |
+| `03/04` text clustering | [TF-IDF, clearly explained](https://www.youtube.com/watch?v=OymqCnh-APA) — ritvikmath |
+
+Once clustering makes sense, these two are the natural next step for visualising
+high-dimensional data: [t-SNE](https://www.youtube.com/watch?v=NEaUSP4YerM) and
+[UMAP](https://www.youtube.com/watch?v=eN0wFzBA4Sc), both StatQuest.
+
+### Module 04 — deep learning
+
+**Watch the 3Blue1Brown series first, in order.** It is the best explanation of neural
+networks that exists, and chapters 3–4 are exactly what `04/01` makes you write by hand.
+
+| # | Video |
+|---|---|
+| 1 | [But what *is* a neural network?](https://www.youtube.com/watch?v=aircAruvnKk) |
+| 2 | [Gradient descent, how neural networks learn](https://www.youtube.com/watch?v=IHZwWFHWa-w) |
+| 3 | [Backpropagation, intuitively](https://www.youtube.com/watch?v=Ilg3gGewQ5U) |
+| 4 | [Backpropagation calculus](https://www.youtube.com/watch?v=tIeHLnjs5U8) |
+
+([the full playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi))
+
+Then, per notebook:
+
+| Notebook | Watch first |
+|---|---|
+| `04/01` net from scratch | [The Essential Main Ideas of Neural Networks](https://www.youtube.com/watch?v=CqOfi41LfDw) → [Backpropagation Main Ideas](https://www.youtube.com/watch?v=IN2XmBhILt4) → [Gradient Descent, Step-by-Step](https://www.youtube.com/watch?v=sDv4f4s2SB8) — all StatQuest |
+| `04/02`–`04/05` TensorFlow | [TensorFlow 2.0 Complete Course](https://www.youtube.com/watch?v=tPYj3fFJGjk) — freeCodeCamp, ~7h |
+| `04/05` + `04/07` CNNs | [Image Classification with CNNs](https://www.youtube.com/watch?v=HGwBXDKFk9I) — StatQuest, or [How CNNs work](https://www.youtube.com/watch?v=FmpDIaiMIeA) — Brandon Rohrer |
+| `04/06` PyTorch | [PyTorch for Deep Learning — Full Course](https://www.youtube.com/watch?v=V_xro1bcAuA) — freeCodeCamp, ~25h (dip in, do not watch it all) |
+| `04/08` regularization | [Regularization](https://www.youtube.com/watch?v=6g0t3Phly2M) → [Why Regularization Reduces Overfitting](https://www.youtube.com/watch?v=NyG-7nRpsW8) → [Understanding Dropout](https://www.youtube.com/watch?v=ARq74QuavAo) — all Andrew Ng |
+| `04/09` transfer learning | [Transfer Learning](https://www.youtube.com/watch?v=yofjFQddwHE) — Andrew Ng |
+
+### Interactive instead of video — often better
+
+- [Kaggle Learn: Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) —
+  ~3h, runs in the browser, nothing to install.
+- [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course) —
+  interactive gradient-descent and loss widgets.
+- [INRIA scikit-learn MOOC](https://inria.github.io/scikit-learn-mooc/) — by the
+  scikit-learn core developers. The deepest free follow-up to module 02.
+- [Andrew Ng's ML Specialization](https://www.coursera.org/specializations/machine-learning-introduction) —
+  free to audit (choose **Audit**, not Enroll).
+
+### Suggested order for a complete beginner
+
+1. **Machine Learning for Everybody** (~4h) in one sitting — no notes, just absorb the vocabulary.
+2. Module **01** notebooks.
+3. Module **02**, watching the matching StatQuest video before each notebook.
+4. **Kaggle Intro to ML** afterwards, as reinforcement.
+
+For modules 03 and 04, watch per-notebook rather than front-loading — except the
+3Blue1Brown series, which is worth watching straight through before you touch module 04.
 
 ---
 
@@ -176,16 +253,9 @@ Modules 05 and 06 keep their own data alongside their notebooks.
 - Written for this path: `02/02`–`02/09`, `03/00`, `04/00`, `04/01`, `04/06`, `04/08`,
   `05/00`, `06/01`–`06/04`, `06/offline_llm.py`, and all of module 07.
 
-### Free resources to go deeper
+### Reading, beyond the videos above
 
-- [INRIA scikit-learn MOOC](https://github.com/INRIA/scikit-learn-mooc) — by the
-  scikit-learn core developers. The best free follow-up to module 02.
 - [An Introduction to Statistical Learning (ISLP)](https://www.statlearning.com/) —
   free PDF + Python labs. The maths under module 02.
-- [Kaggle Learn](https://www.kaggle.com/learn) — short, in-browser reinforcement.
-- [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course) —
-  interactive gradient-descent visualisations.
-- [StatQuest](https://www.youtube.com/c/joshstarmer) — visual explanations of every
-  concept in module 02.
 - [LangGraph docs](https://docs.langchain.com/oss/python/langgraph/overview) — for module 06.
 - *Designing Machine Learning Systems*, Chip Huyen — for module 07.

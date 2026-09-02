@@ -11,17 +11,19 @@ matching `y` on data it has never seen.
 Notebook 01 is the whole workflow at speed. Notebooks 02–08 each take one thing that
 notebook 01 used without explaining, and explain it properly. Do them in order.
 
-| # | Notebook | The question it answers |
-|---|---|---|
-| 01 | `01-end-to-end-workflow.ipynb` | How does a full project look, start to finish? |
-| 02 | `02-preprocessing-and-scaling.ipynb` | Why do KNN and SVM need scaling, and trees don't? |
-| 03 | `03-overfitting-and-learning-curves.ipynb` | Too simple, too complex, or short of data? |
-| 04 | `04-cross-validation-and-leakage.ipynb` | Is my score real, or did I leak the test set? |
-| 05 | `05-classification-metrics.ipynb` | Accuracy is 97% and the model is useless — why? |
-| 06 | `06-regression-and-regularization.ipynb` | What does `Ridge`/`Lasso` do to the coefficients? |
-| 07 | `07-trees-forests-and-boosting.ipynb` | How does a tree split? Bagging vs boosting? |
-| 08 | `08-hyperparameter-tuning.ipynb` | How do I tune without fooling myself? |
-| 09 | `09-capstone-project.ipynb` | Can you run the whole loop yourself? |
+
+| #   | Notebook                                   | The question it answers                           |
+| --- | ------------------------------------------ | ------------------------------------------------- |
+| 01  | `01-end-to-end-workflow.ipynb`             | How does a full project look, start to finish?    |
+| 02  | `02-preprocessing-and-scaling.ipynb`       | Why do KNN and SVM need scaling, and trees don't? |
+| 03  | `03-overfitting-and-learning-curves.ipynb` | Too simple, too complex, or short of data?        |
+| 04  | `04-cross-validation-and-leakage.ipynb`    | Is my score real, or did I leak the test set?     |
+| 05  | `05-classification-metrics.ipynb`          | Accuracy is 97% and the model is useless — why?   |
+| 06  | `06-regression-and-regularization.ipynb`   | What does `Ridge`/`Lasso` do to the coefficients? |
+| 07  | `07-trees-forests-and-boosting.ipynb`      | How does a tree split? Bagging vs boosting?       |
+| 08  | `08-hyperparameter-tuning.ipynb`           | How do I tune without fooling myself?             |
+| 09  | `09-capstone-project.ipynb`                | Can you run the whole loop yourself?              |
+
 
 Notebooks 02–08 end with five exercises each. **Do them.** They are where the learning is.
 
@@ -29,9 +31,11 @@ Notebooks 02–08 end with five exercises each. **Do them.** They are where the 
 
 1. **Scale distance-based models** — KNN, SVM, logistic regression, PCA. Not trees.
 2. **A single train/test split is a lottery ticket** — cross-validate instead.
-3. **Every fitted transformer belongs inside a `Pipeline`** — that is what stops leakage.
+3. **Every fitted transformer belongs inside a** `Pipeline` — that is what stops leakage.
 4. **The metric comes from the problem, not from habit** — and so does the threshold.
 5. **The tuning score is optimistic** — report the held-out number.
+
+
 
 ## Self-check before the capstone
 
@@ -41,6 +45,8 @@ Notebooks 02–08 end with five exercises each. **Do them.** They are where the 
 - [ ] Given a business problem, choose between precision and recall and justify it.
 - [ ] Explain the difference between bagging and boosting.
 - [ ] Explain why `GridSearchCV.best_score_` is not your final number.
+
+
 
 ## Datasets
 
