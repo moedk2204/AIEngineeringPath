@@ -35,3 +35,4 @@ Loaded from `../data/`: `car-sales.csv`, `car-sales-missing-data.csv`, `heart-di
 ## Source
 
 Practice notebooks from the [Zero to Mastery ML course](https://github.com/mrdbourke/zero-to-mastery-ml).
+youtube playlist : https://youtube.com/playlist?list=PLZPZq0r_RZOO_wKfxdnAb9BgnffGtIHjR&si=gPwJS4mJ64vkh1yz
