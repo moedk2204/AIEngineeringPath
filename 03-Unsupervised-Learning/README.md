@@ -48,3 +48,13 @@ reading a solution feels like learning and is not. Use them to check, not to sta
 
 From `../data/`: `Mall_Customers.csv`, `Country-data.csv`, `movies.csv`, `ratings.csv`,
 `links.csv`, `tags.csv`, `news_data.tsv`, `churn.csv`.
+
+## Video references
+
+| Notebook | Video | Length |
+|---|---|---|
+| 00 | [K-Means Clustering Algorithm in Python](https://www.youtube.com/watch?v=EItlUEPCIzM) — codebasics | 25 min |
+| 01 | [K-means Clustering From Scratch in Python](https://www.youtube.com/watch?v=lX-3nGHDhQg) — Dataquest — the exact exercise of notebook 01 | 39 min |
+| 02 | [PCA in Python](https://www.youtube.com/watch?v=Lsue2gEM9D0) → [DBSCAN, Clearly Explained](https://www.youtube.com/watch?v=RDZUdRSDOok) → [Hierarchical Clustering](https://www.youtube.com/watch?v=7xHsRkOdVwo) — StatQuest | 12 + 9 + 11 min |
+| 03 | [Collaborative Filtering](https://www.youtube.com/watch?v=Fmtorg_dmM0) — ritvikmath | 12 min |
+| 04 | [TF-IDF: Data Science Concepts](https://www.youtube.com/watch?v=OymqCnh-APA) — ritvikmath | 8 min |

@@ -91,3 +91,13 @@ evaluating anything.
 - [ ] Say how memory works, in terms of checkpointer and `thread_id`.
 - [ ] Given a task, decide agent vs chain vs a single structured call — and justify it.
 - [ ] Name three things that must be true before an agent touches real users.
+
+## Course references
+
+Both are free, official courses from LangChain Academy and use the modern 1.x APIs this
+module teaches.
+
+| Course | Length | Use it for |
+|---|---|---|
+| [Introduction to LangChain — Python](https://academy.langchain.com/courses/foundation-introduction-to-langchain-python) | ~1.5h, 30 lessons | Notebooks 00–01: models, tools, building agents, debugging with LangSmith |
+| [Introduction to LangGraph — Python](https://academy.langchain.com/courses/intro-to-langgraph) | ~6h, 55 lessons | Notebooks 02–04: state, memory, human-in-the-loop, sub-graphs, deployment |

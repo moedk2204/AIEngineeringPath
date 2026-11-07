@@ -233,3 +233,12 @@ curl -X POST http://localhost:8000/predict \
 - *Designing Machine Learning Systems*, Chip Huyen — the best book on this subject.
 - The FastAPI docs' "Bigger Applications" and SQL database guides, then Alembic for
   migrations, are the natural next steps beyond this example.
+
+## Video references
+
+| Video | Length | Use it for |
+|---|---|---|
+| [FastAPI Full Crash Course](https://www.youtube.com/watch?v=rvFsGRvj9jo) — NeuralNine (2025) | 58 min | `api.py`, `schemas.py` — routes, Pydantic models, validation |
+| [Pytest Tutorial](https://www.youtube.com/watch?v=EgpLj86ZHFQ) — Tech With Tim (2025) | 33 min | `tests/` — fixtures, `conftest.py`, parametrize |
+| [Docker Crash Course for Absolute Beginners](https://www.youtube.com/watch?v=pg19Z8LL06w) — TechWorld with Nana | 1h08 | `Dockerfile`, `docker-compose.yml` |
+| [How to Deploy ML Solutions with FastAPI, Docker & AWS](https://www.youtube.com/watch?v=pJ_nCklQ65w) — Shaw Talebi | 29 min | Ties it together: a trained model served over HTTP in a container |

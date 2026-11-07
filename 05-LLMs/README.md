@@ -81,3 +81,16 @@ Worth knowing what you are not being taught here, so you can go looking:
 - [ ] Explain what temperature does, and when you want it at 0.
 - [ ] Draw the RAG pipeline: document → chunks → embeddings → retrieval → prompt → answer.
 - [ ] Name the biggest failure mode of RAG. (Retrieval, not generation — nearly always.)
+
+## Video references
+
+| Notebook | Video | Length |
+|---|---|---|
+| 00 | [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — 3Blue1Brown, then [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — Andrej Karpathy | 8 min + 1h |
+| 01–02 | [Getting Started With Hugging Face in 15 Minutes](https://www.youtube.com/watch?v=QEaBAZQCtwE) — AssemblyAI — pipelines, tokenizers, models | 15 min |
+| 03 | [LoRA & QLoRA Fine-tuning Explained](https://www.youtube.com/watch?v=t1caDsMzWBk) — Mark Hennings | 15 min |
+| 04 | [Python RAG Tutorial (with Local LLMs): AI For Your PDFs](https://www.youtube.com/watch?v=2TJxpyO3ei4) — pixegami — the same project as notebook 04 | 22 min |
+
+Going further: the free [Hugging Face LLM Course](https://huggingface.co/learn/llm-course) (text,
+hands-on) and [Learn RAG From Scratch](https://www.youtube.com/watch?v=sVcwVQRHIc8) —
+freeCodeCamp, by a LangChain engineer (2h33).

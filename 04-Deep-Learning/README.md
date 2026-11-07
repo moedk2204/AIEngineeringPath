@@ -57,3 +57,12 @@ For anything bigger, use Google Colab (free GPU) — upload the notebook and the
 - [ ] Look at a loss curve and say whether the learning rate is too high, too low or fine.
 - [ ] Explain why a CNN handles a shifted image and a fully-connected network does not.
 - [ ] Name the order to try fixes when a model overfits.
+
+## Video references
+
+| Video | Length | Use it for |
+|---|---|---|
+| [Neural Networks playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) — 3Blue1Brown | chapters 1–4, ~1h | **Watch before notebook 01.** The clearest visual explanation of neurons, gradient descent and backprop |
+| [Learn TensorFlow and Deep Learning fundamentals](https://www.youtube.com/watch?v=tpCFfeUEGs8) — Daniel Bourke | 10h, dip in | Notebooks 02–05. Code-first, same author as the Zero to Mastery material in module 01 |
+| [PyTorch for Deep Learning — Full Course](https://www.youtube.com/watch?v=V_xro1bcAuA) — freeCodeCamp / Daniel Bourke | 25h, dip in | Notebooks 06–08. Use the chapters: fundamentals → workflow → classification → computer vision |
+| [Building micrograd: backprop spelled out](https://www.youtube.com/watch?v=VMj-3S1tku0) — Andrej Karpathy | 2h26 | Optional, deeper: build backprop from zero. Watch after notebook 01 if you want it to really click |
